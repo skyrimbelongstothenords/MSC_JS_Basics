@@ -1,1 +1,13 @@
-console.log("You are at " + window.location);
+let money = prompt('Сколько у вас с собой денег, любезный сэр?');
+parseFloat(money);
+let apples = prompt('Сколько вы купили яблок?');
+parseFloat(apples);
+let bread = prompt('Сколько вы купили хлеба?');
+parseFloat(bread);
+let oneApple = prompt('Сколько стоит одно яблоко?');
+parseFloat(oneApple);
+let oneBread = prompt('Сколько стоит одна булка хлеба?');
+parseFloat(oneBread);
+let enough = apples * oneApple + bread * oneBread;
+let answer = money >= enough;
+document.body.innerHTML = answer;
