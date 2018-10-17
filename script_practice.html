@@ -13,7 +13,40 @@
     <script>let checky = prompt("Enter a number"); 
         checky = parseInt(checky); 
         if (checky === 0) { console.log(checky)} 
-        else {console.log(-(checky))}</script>
+        else {console.log(-(checky))}
+        
+        
+        const rock = 0;
+const scissors = 1;
+const paper = 2;
+
+// попросим игрока ввести ответ в виде числа
+let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
+// Рандомное число 0, 1 или 2 — разберем это позже, пока не заморачивайтесь
+let computer = Math.floor(Math.random() * 3);
+
+// опишем все условия и будем выводить в консоль 'computer win' или 'player win'
+if (player == 0 && computer == 1)
+{alert("Computer: " + computer + " You win!")}
+else if (player == 0 && computer == 2) {
+alert("Computer: " + computer + " Computer wins!")
+}
+else if (player == 1 && computer == 0) {
+alert("Computer: " + computer + " Computer wins!")
+}
+else if (player == 1 && computer == 2) {
+alert("Computer: " + computer + " You win!")
+}
+else if (player == 2 && computer == 0) {
+alert("Computer: " + computer + " You win!")
+
+}
+else if (player == 2 && computer == 1) {
+alert("Computer: " + computer + " Computer wins!")
+}
+else {
+alert("Computer: " + computer + " Tie!")
+}</script>
 
 </body>
 </html>
